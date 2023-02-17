@@ -118,23 +118,20 @@ img {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #404bbf;
+  background-color: var(--accent-color);
   border-radius: 2px;
   position: absolute;
   /*left: 0;*/
   bottom: -28px;
-  /*opacity: 0;*/
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover::after {
-  opacity: 1;
+  
 }
 
 .header-link:hover,
 .header-link:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -151,7 +148,9 @@ img {
 
 .email:hover,
 .email:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel {
@@ -165,7 +164,9 @@ img {
 
 .tel:hover,
 .tel:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-list {
   display: flex;
@@ -228,6 +229,8 @@ img {
 .modal-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-wrap {
@@ -386,6 +389,8 @@ img {
 
 .team-soc-link:is(:hover, :focus) {
   background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*======================= CUSTOMERS ====================*/
@@ -428,10 +433,14 @@ img {
 
 .company-link:is(:hover, :focus) {
   border: 1px solid var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-link:is(:hover, :focus) .company-icon {
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*======================= FOOTER =======================*/
@@ -497,6 +506,8 @@ img {
 
 .footer-soc-link:is(:hover, :focus) {
   background-color: #31d0aa;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-text-soc {
   font-family: "Roboto", sans-serif;
@@ -536,10 +547,12 @@ img {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
-  background: #404bbf;
+  /*background: #404bbf;*/
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-list {
@@ -617,6 +630,8 @@ img {
 }
 .card-item:hover .cover-text-wrap {
   transform: translateY(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*======================= CONTAINER ==========================*/
 .container {
