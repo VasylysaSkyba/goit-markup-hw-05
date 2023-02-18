@@ -111,6 +111,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cover {
@@ -133,8 +135,6 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -170,13 +170,8 @@ img {
 .tel:hover,
 .tel:focus {
   color: var(--accent-color);
-  color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contact-list {
   display: flex;
   align-items: center;
@@ -404,6 +399,7 @@ img {
 .customers {
   padding-bottom: 120px;
 }
+
 .customers-title {
   font-weight: 700;
   font-size: 36px;
@@ -425,6 +421,7 @@ img {
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
+
 .company-link {
   width: 100%;
   height: 100%;
@@ -436,8 +433,11 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .company-icon {
   fill: #8e8f99;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-link:is(:hover, :focus) {
